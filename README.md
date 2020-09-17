@@ -1,3 +1,3 @@
-# Espace membre en PHP
+# Cronos
 
-Vous trouverez un espace membre en Php, si vous avez des idées d'amélioration vous pouvez fork ce projet :)
+Outils industriel de gestion de commande
