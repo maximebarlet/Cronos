@@ -1,0 +1,265 @@
+:id, :shipping_date, :order_origin, :order_creation_date, :reference, :customer_type, :language, :country, :export, :carrier, :carrier_date,
+ :recipient, :shipping_adress, :phone, :email, :item_reference, :item_name_color, :width, :height, :roller_number_cm, :square_meter, :billing_declik,
+  :meter_square_ananbo, :impress_again, :order_date_declik, :customer_notif, :baseline, :print_file_date, :origin_certificate_date, :shipping_email_date,
+  :infos, :downloaded_file, :declik_validate, :print_state_item, :shipping_number, :carrier_declik, :customer, :shipping_adress_declik, :phone_declik,
+  :origin_certificate_rec, :reference_declik, :packaging_number
+
+ord
+
+<label for="shipping_date">shipping_date</label>
+<input type="text" name="shipping_date" id="shipping_date">
+
+<label for="order_origin">order_origin</label>
+<input type="text" name="order_origin" id="order_origin">
+
+<label for="order_creation_date">order_creation_date</label>
+<input type="text" name="order_creation_date" id="order_creation_date">
+
+<label for="reference">reference</label>
+<input type="text" name="reference" id="reference">
+
+<label for="customer_type">customer_type</label>
+<input type="text" name="customer_type" id="customer_type">
+
+<label for="language">language</label>
+<input type="text" name="language" id="language">
+
+<label for="country">country</label>
+<input type="text" name="country" id="country">
+
+<label for="export">export</label>
+<input type="text" name="export" id="export">
+
+<label for="carrier">carrier</label>
+<input type="text" name="carrier" id="carrier">
+
+<label for="carrier_date">carrier_date</label>
+<input type="text" name="carrier_date" id="carrier_date">
+
+<label for="recipient">recipient</label>
+<input type="text" name="recipient" id="recipient">
+
+<label for="shipping_adress">shipping_adress</label>
+<input type="text" name="shipping_adress" id="shipping_adress">
+
+<label for="phone">phone</label>
+<input type="text" name="phone" id="phone">
+
+<label for="email">email</label>
+<input type="text" name="email" id="email">
+
+<label for="item_reference">item_reference</label>
+<input type="text" name="item_reference" id="item_reference">
+
+<label for="item_name_color">item_name_color</label>
+<input type="text" name="item_name_color" id="item_name_color">
+
+<label for="width">width</label>
+<input type="text" name="width" id="width">
+
+<label for="height">height</label>
+<input type="text" name="height" id="height">
+
+<label for="roller_number_cm">roller_number_cm</label>
+<input type="text" name="roller_number_cm" id="roller_number_cm">
+
+<label for="square_meter">square_meter</label>
+<input type="text" name="square_meter" id="square_meter">
+
+<label for="billing_declik">billing_declik</label>
+<input type="text" name="billing_declik" id="billing_declik">
+
+<label for="meter_square_ananbo">meter_square_ananbo</label>
+<input type="text" name="meter_square_ananbo" id="meter_square_ananbo">
+
+<label for="impress_again">impress_again</label>
+<input type="text" name="impress_again" id="impress_again">
+
+<label for="order_date_declik">order_date_declik</label>
+<input type="text" name="order_date_declik" id="order_date_declik">
+
+<label for="customer_notif">customer_notif</label>
+<input type="text" name="customer_notif" id="customer_notif">
+
+<label for="baseline">baseline</label>
+<input type="text" name="baseline" id="baseline">
+
+<label for="print_file_date">print_file_date</label>
+<input type="text" name="print_file_date" id="print_file_date">
+
+<label for="origin_certificate_date">origin_certificate_date</label>
+<input type="text" name="origin_certificate_date" id="origin_certificate_date">
+
+<label for="shipping_email_date">shipping_email_date</label>
+<input type="text" name="shipping_email_date" id="shipping_email_date">
+
+<label for="infos">infos</label>
+<input type="text" name="infos" id="infos">
+
+<label for="downloaded_file">downloaded_file</label>
+<input type="text" name="downloaded_file" id="downloaded_file">
+
+<label for="declik_validate">declik_validate</label>
+<input type="text" name="declik_validate" id="declik_validate">
+
+<label for="print_state_item">print_state_item</label>
+<input type="text" name="print_state_item" id="print_state_item">
+
+<label for="shipping_number">shipping_number</label>
+<input type="text" name="shipping_number" id="shipping_number">
+
+<label for="carrier_declik">carrier_declik</label>
+<input type="text" name="carrier_declik" id="carrier_declik">
+
+<label for="customer">customer</label>
+<input type="text" name="customer" id="customer">
+
+<label for="shipping_adress_declik">shipping_adress_declik</label>
+<input type="text" name="shipping_adress_declik" id="shipping_adress_declik">
+
+<label for="phone_declik">phone_declik</label>
+<input type="text" name="phone_declik" id="phone_declik">
+
+<label for="shipping_date">shipping_date</label>
+<input type="text" name="shipping_date" id="shipping_date">
+
+<label for="origin_certificate_rec">origin_certificate_rec</label>
+<input type="text" name="origin_certificate_rec" id="origin_certificate_rec">
+
+<label for="reference_declik">reference_declik</label>
+<input type="text" name="reference_declik" id="reference_declik">
+
+<label for="packaging_number">packaging_number</label>
+<input type="text" name="packaging_number" id="packaging_number">
+
+
+
+
+
+$query->bindValue(':id', $id, PDO::PARAM_INT);
+$query->bindValue(':shipping_date', $shipping_date, PDO::PARAM_DATE);
+$query->bindValue(':order_origin', $order_origin, PDO::PARAM_STR);
+$query->bindValue(':order_creation_date', $order_creation_date, PDO::PARAM_DATE);
+$query->bindValue(':reference', $reference, PDO::PARAM_STR);
+$query->bindValue(':customer_type', $customer_type, PDO::PARAM_STR);
+$query->bindValue(':language', $language, PDO::PARAM_STR);
+$query->bindValue(':country', $country, PDO::PARAM_STR);
+$query->bindValue(':export', $export, PDO::PARAM_BOOL);
+$query->bindValue(':carrier', $carrier, PDO::PARAM_STR);
+$query->bindValue(':carrier_date', $carrier_date, PDO::PARAM_DATE);
+$query->bindValue(':recipient', $recipient, PDO::PARAM_STR);
+$query->bindValue(':shipping_adress', $shipping_adress, PDO::PARAM_STR);
+$query->bindValue(':phone', $phone, PDO::PARAM_STR);
+$query->bindValue(':email', $email, PDO::PARAM_STR);
+$query->bindValue(':item_reference', $item_reference, PDO::PARAM_STR);
+$query->bindValue(':item_name_color', $item_name_color, PDO::PARAM_STR);
+$query->bindValue(':width', $width, PDO::PARAM_STR);
+$query->bindValue(':height', $height, PDO::PARAM_STR);
+$query->bindValue(':roller_number_cm', $roller_number_cm, PDO::PARAM_STR);
+$query->bindValue(':square_meter', $square_meter, PDO::PARAM_STR);
+$query->bindValue(':billing_declik', $billing_declik, PDO::PARAM_STR);
+$query->bindValue(':meter_square_ananbo', $meter_square_ananbo, PDO::PARAM_STR);
+$query->bindValue(':impress_again', $impress_again, PDO::PARAM_BOOL);
+$query->bindValue(':order_date_declik', $order_date_declik, PDO::PARAM_DATE);
+$query->bindValue(':customer_notif', $customer_notif, PDO::PARAM_DATE);
+$query->bindValue(':baseline', $baseline, PDO::PARAM_BOOL);
+$query->bindValue(':print_file_date', $print_file_date, PDO::PARAM_DATE);
+$query->bindValue(':origin_certificate_date', $origin_certificate_date, PDO::PARAM_DATE);
+$query->bindValue(':shipping_email_date', $shipping_email_date, PDO::PARAM_DATE);
+$query->bindValue(':infos', $infos, PDO::PARAM_STR);
+$query->bindValue(':downloaded_file', $downloaded_file, PDO::PARAM_BOOL);
+$query->bindValue(':declik_validate', $declik_validate, PDO::PARAM_BOOL);
+$query->bindValue(':print_state_item', $print_state_item, PDO::PARAM_BOOL);
+$query->bindValue(':shipping_number', $shipping_number, PDO::PARAM_STR);
+$query->bindValue(':carrier_declik', $carrier_declik, PDO::PARAM_STR);
+$query->bindValue(':customer', $customer, PDO::PARAM_STR);
+$query->bindValue(':shipping_adress_declik', $shipping_adress_declik, PDO::PARAM_STR);
+$query->bindValue(':phone_declik', $phone_declik, PDO::PARAM_STR);
+$query->bindValue(':shipping_date_declik', $shipping_date_declik, PDO::PARAM_DATE);
+$query->bindValue(':origin_certificate_rec', $origin_certificate_rec, PDO::PARAM_STR);
+$query->bindValue(':reference_declik', $reference_declik, PDO::PARAM_STR);
+$query->bindValue(':packaging_number', $packaging_number, PDO::PARAM_STR);
+
+
+
+
+
+
+
+  $produit = strip_tags($_POST['produit']);
+$id = strip_tags($_POST['id']);
+$shipping_date = strip_tags($_POST['shipping_date']);
+$order_origin = strip_tags($_POST['order_origin']);
+$order_creation_date = strip_tags($_POST['order_creation_date']);
+$reference = strip_tags($_POST['reference']);
+$customer_type = strip_tags($_POST['customer_type']);
+$language = strip_tags($_POST['language']);
+$country = strip_tags($_POST['country']);
+$export = strip_tags($_POST['export']);
+$carrier = strip_tags($_POST['carrier']);
+$carrier_date = strip_tags($_POST['carrier_date']);
+$recipient = strip_tags($_POST['recipient']);
+$shipping_adress = strip_tags($_POST['shipping_adress']);
+$phone = strip_tags($_POST['phone']);
+$email = strip_tags($_POST['email']);
+$item_reference = strip_tags($_POST['item_reference']);
+$item_name_color = strip_tags($_POST['item_name_color']);
+$width = strip_tags($_POST['width']);
+$height = strip_tags($_POST['height']);
+$roller_number_cm = strip_tags($_POST['roller_number_cm']);
+$square_meter = strip_tags($_POST['square_meter']);
+$billing_declik = strip_tags($_POST['billing_declik']);
+$infos = strip_tags($_POST['infos']);
+$downloaded_file = strip_tags($_POST['downloaded_file']);
+$declik_validate = strip_tags($_POST['declik_validate']);
+$print_state_item = strip_tags($_POST['print_state_item']);
+$shipping_number = strip_tags($_POST['shipping_number']);
+$carrier_declik = strip_tags($_POST['carrier_declik']);
+$customer = strip_tags($_POST['customer']);
+$shipping_adress_declik = strip_tags($_POST['shipping_adress_declik']);
+$phone_declik = strip_tags($_POST['phone_declik']);
+$origin_certificate_rec = strip_tags($_POST['origin_certificate_rec']);
+$shipping_date_declik = strip_tags($_POST['shipping_date_declick']);
+$reference_declik = strip_tags($_POST['reference_declik']);
+$packaging_number = strip_tags($_POST['packaging_number']);
+
+
+shipping_date
+order_origin
+order_creation_date	reference
+customer_type
+language
+country
+export
+carrier
+carrier_date
+recipîent
+shipping_adress	phone
+email
+item_reference
+item_name_color
+width
+height
+roller_number_cm
+square_meter
+billing_declik
+meter_square_ananbo
+impress_again
+order_date_declik
+customer_notif
+baseline
+print_file_date
+origin_certificate_date
+shipping_email_date
+infos
+downloaded_file
+declik_validate
+print_state_item
+shipping_number
+carrier_declik
+customer
+shipping_adress_declik
+phone_declik
+origin_certificate_rec
+reference_declik
+packaging_number
